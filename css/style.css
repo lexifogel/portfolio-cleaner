@@ -900,14 +900,12 @@ input[type=submit]:hover {
 }
 
 
-/* @media screen and (prefers-reduced-motion: reduce) {
-
-    .parallax{
+@media screen and (prefers-reduced-motion: reduce) {
+    /* .parallax{
         background-attachment: scroll; 
-    }
+    } */
     .flipcard:hover .flipcard-inner {
         transition: transform none;
         transform: none;
     }
-
-} */
+}
