@@ -110,8 +110,13 @@ a:hover {
 }
 
 a:visited {
+    color: #5da2d5; 
+}
+
+nav a:visited {
     text-decoration: none;
-    color: #5da2d5; /* TBD if i keep this .... */
+    color: #215583;
+    /* color: #5da2d5;  */
 }
 
 
@@ -279,13 +284,10 @@ h3.activities  {
     display: block;
     margin: auto;
     padding-bottom: 1em;
-    /* why is the top of this image cut off ?? */
 }
 
 #playa-logo {
     height: 4em;
-    /* margin-left: .5em;
-    margin-bottom: 1em; */
     display: block;
     margin: auto;
     padding-bottom: 1em;
@@ -293,8 +295,6 @@ h3.activities  {
 
 #echo-logo {
     height: 4em;
-    /* margin-left: .5em;
-    margin-bottom: 1em; */
     display: block;
     margin: auto;
     padding-bottom: 1em;
@@ -619,6 +619,7 @@ input[type=submit]:hover {
     
     .gallery {
         grid-template-columns: 30% 30% 30%;
+        column-gap: 1em;
         grid-template-rows: repeat(5, auto);
         grid-column-gap: 1.5em;
         margin: 1em;
@@ -764,16 +765,14 @@ input[type=submit]:hover {
 }
 
 
-@media screen and (prefers-reduced-motion: reduce) {
+/* @media screen and (prefers-reduced-motion: reduce) {
 
-/* Turn Parallax effect off */
     .parallax{
         background-attachment: scroll; 
     }
-/* Turn Flip card off */
     .flipcard:hover .flipcard-inner {
         transition: transform none;
         transform: none;
     }
 
-}
+} */
