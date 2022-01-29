@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/LF.png"/>
+    <title>Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/f9c76c7132.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T33X1HHSP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6T33X1HHSP');
+    </script>
+
+  </head>
+
+  <body class="dark">
+    <div id="page-container">
+      <div id="content-wrap">
+
+    <header>
+    
+      <nav>
+        <a href = "index.html">Home</a>
+        <a href = "about.html">About</a>
+        <a href = "work.html">Work</a>
+        <a href = "contact.html">Contact</a>
+      </nav>
+
+      <div class="dropdown">
+        <button class="dropbtn">≡</button>
+        <div class="dropdown-content">
+          <a href = "index.html">Home</a>
+          <a href = "about.html">About</a>
+          <a href = "work.html">Work</a>
+          <a href = "contact.html">Contact</a>
+        </div>
+      </div>
+
+      <h1>Contact</h1>
+  </header> 
+
+    <main>
+      <br>
+      <h2>Connect with me!</h2><br>
+          <ul class="connect">
+            <li><a href = "../portfolio/resume 1.22.pdf" target="_blank">Resume</a></li>
+            <li><a href = "mailto: lfogel@umich.edu" target="_blank">Email</a></li>
+            <li><a href = "http://www.linkedin.com/in/lexi-fogel" target="_blank">LinkedIn</a></li> 
+          </ul>
+
+      <br><br>    
+      
+      <!-- <h2>Or leave a message:</h2><br> -->
+            <form class="form-inline" action="https://formspree.io/f/xgerbpre" method="POST">
+                  <fieldset>  <!-- name is key, input is value -->
+                      <legend>Or leave a message:</legend>  <!-- style this-->
+                      <label for="name">Name</label>
+                      <input type="text" placeholder="Name" id="name" name="name" class="personal-info" required>
+                      <br>
+                      <label for="email">Email</label>
+                      <input type="email" placeholder="Email" id="email" name="email" class="personal-info" required>
+                      <br><br>
+                      <!-- <label for="date">Date</label>
+                      <input id="date" type="date" placeholder="Date" name="date">
+                      <br> -->
+                      <label for="message">Message</label>
+                      <textarea placeholder="Message" id="message" name="msg" required></textarea>
+                      <br><br>
+                      <label for="submit">Submit</label>
+                      <input type="submit" value="Submit">
+                  </fieldset>
+              </form>
+              
+
+    </main>
+
+ 
+  </div>
+    
+  <footer id="footer">
+      <p>Lexi Fogel &copy; 2022</p>
+</footer>
+
+
+ <script src="js/javascript.js"></script>
+</div>
+</body>
+  
+  </html>
+
+  <!-- phone regex: \d{3}[\-]\d{3}[\-]\d{4}  -->

@@ -1,0 +1,779 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    background-color: #fff; 
+    /* #215583, #5da2d5; */
+    font-family: 'Montserrat', sans-serif;
+    margin: 3em;
+    padding: 0;
+    height: 100%;
+    color: #215583;
+}
+
+.background-color {
+    background: linear-gradient(#5da2d5,#215583);
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: #5da2d5; */
+    width: 100%;
+    text-align: right;
+}
+
+nav a {
+    padding: .5em;
+    -webkit-text-stroke: .3px #5da2d5;
+}
+
+.background-color nav a {
+    color: #eefbfb;
+}
+
+
+/* standard formatting -- all pages */
+h1 {
+    font-size: 3.25em;
+    /* color: #eefbfb; */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+    margin-bottom: .5em;
+    margin-top: .5em;
+    /* text-shadow: .03em .05em #5da2d5; */
+
+    /* -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6); */
+}
+
+
+/* #eefbfb */
+
+h2 {
+    font-size: 1.5em;
+    /* color: #eefbfb; */
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: .5em;
+}
+
+h3 {
+    font-size: 1em;
+    /* color: #eefbfb; */
+    line-height: 1.15;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+h4 {
+    /* font-size: 16px; */
+    /* color: #FFF; */
+    font-weight: bold;
+    line-height: 1.15;
+    margin: .5em;
+}
+
+p {
+    /* color: #eefbfb; */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.15;
+    margin: .5em;
+    margin-bottom: 1em;
+}
+
+ul, li {
+    line-height: 1.35;
+    /* color: #eefbfb; */
+    margin-left: 1em;
+}
+
+*:focus {
+    border: 2px solid;
+}
+
+:focus {
+    font-weight: bold;
+}
+
+a {
+    /* color: #eefbfb; */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #215583;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #5da2d5; /* TBD if i keep this .... */
+}
+
+
+/* fixed pic issue vv */
+img {
+    max-width: 100%;
+    object-fit: inherit;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+footer {
+    background-color: transparent;
+    position: fixed;
+
+    text-align: center;
+    /* stick to bottom! ? !!!! */
+    color: #215583; /* eefbfb */
+    font-size: .75em;
+}
+/* end standard formatting -- all pages */
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
+h1.funky {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+.dropdown {
+    display: none;
+  }
+
+
+
+
+/* Home page */ 
+
+.container p {
+    margin: .75em auto;
+}
+
+.container { 
+    margin-bottom: 3em;
+}
+
+.container h2{
+    margin-top: 2em;
+    margin-bottom: 1.25em;
+}
+/* end home */
+
+
+/* About page */
+
+h2.hobbies  {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h3.activities  {
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+.gallery {
+    display: grid;
+    width: 85%;
+    grid-template-columns: 85%;
+    grid-template-rows: repeat(9, auto);
+    align-items: center;
+    justify-content: center;
+    grid-row-gap: 2em;
+    margin: 1em;
+}
+
+#pic1 {
+    grid-row: 1 / span 1;
+}
+
+#pic2 {
+    grid-row: 2 / span 1;
+}
+
+#pic3 {
+    grid-row: 3 / span 1;
+}
+
+#pic4 {
+    grid-row: 4 / span 1;
+}
+
+#pic5 {
+    grid-row: 5 / span 1;
+}
+
+#pic6 {
+    grid-row: 6 / span 1;
+}
+
+#pic7 { 
+    grid-row: 7 / span 1;
+}
+
+#pic8 {
+    grid-row: 8 / span 1;
+}
+
+#pic9 {
+    grid-row: 9 / span 1;
+}
+/* end about */
+
+
+/* Work page */
+
+.work_page {
+    margin: 2em;
+}
+
+#IA-logo, #FEAST-logo {
+    height: 5em;
+    display: block;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+#TMD-logo {
+    height: 4em;
+    display: block;
+    margin: auto;
+    padding-bottom: 1em;
+    /* why is the top of this image cut off ?? */
+}
+
+#playa-logo {
+    height: 4em;
+    /* margin-left: .5em;
+    margin-bottom: 1em; */
+    display: block;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+#echo-logo {
+    height: 4em;
+    /* margin-left: .5em;
+    margin-bottom: 1em; */
+    display: block;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+#title1 {
+    align-self: end;
+}
+
+#title2 {
+    margin-top: 1em;
+}
+
+#title3 {
+    margin-top: 1em;
+}
+/* end work */
+
+
+/* Contact page */
+
+label {
+    display: none;
+}
+
+form {
+    display: flex;
+    margin-left: 10px;
+    flex: auto;
+}
+
+.form-inline {
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+
+    flex-basis: 1em;
+    flex-grow: 4;
+}
+
+
+#name, #email, #submit {
+    font-family: 'Montserrat', sans-serif;
+    /* width: 15em; */
+}
+
+.connect {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+legend {
+    font-size: 1.5em;
+    /* color: #eefbfb; */
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1em;
+}
+
+label { /* from accessible-forms CSS */
+    display: none;
+}
+
+input {
+    border-radius: .3em;
+}
+
+input[type=text], input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* .personal-info {
+    display: inline-block;
+    width: 45%;
+} */
+
+textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #eefbfb;
+    font-family: 'Montserrat', sans-serif;
+    color: #215583;
+    padding: 14px 20px;
+    cursor: pointer;
+    width: 25%;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+/* end contact */
+
+
+
+
+/* TABLET view */
+@media screen and (min-width: 760px) {
+
+    /* About page */
+
+    .gallery {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: repeat(5, auto);
+        grid-column-gap: 1em;
+        margin: 1em;
+    }
+    
+    #pic1 {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #pic2 {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    #pic3 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #pic4 {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    #pic5 {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #pic6 {
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    #pic7 { 
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #pic8 {
+        grid-row: 4 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    #pic9 {
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+
+    /* Work page */
+
+    /* jobs grid */
+    .experience {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: auto;
+    }
+
+    #FEAST-title {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        margin-top: 1em;
+    }
+    #FEAST-des {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    #FEAST-logo {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        object-fit: cover;
+    }
+
+    #IA-title {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+        margin-top: 1em;
+    }
+    #IA-des {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+    #IA-logo {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+        justify-self: end;
+    }
+
+    #TMD-title {
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+        margin-top: 1em;
+    }
+
+    #TMD-des {
+        grid-column: 1 / span 1;
+        grid-row: 6 / span 1;
+    }
+
+    #TMD-logo {
+        grid-column: 2 / span 1;
+        grid-row: 6 / span 1;
+        /* object-fit: cover; */
+
+    }
+
+    #playa-title {
+        grid-column: 1 / span 1;
+        grid-row: 7 / span 1;
+        margin-top: 1em;
+    }
+
+    #playa-des {
+        grid-column: 1 / span 1;
+        grid-row: 8 / span 1;
+    }
+
+    #playa-logo {
+        grid-column: 2 / span 1;
+        grid-row: 8 / span 1;
+    }
+
+    #echo-title {
+        grid-column: 1 / span 1;
+        grid-row: 9 / span 1;
+        margin-top: 1em;
+    }
+
+    #echo-des {
+        grid-column: 1 / span 1;
+        grid-row: 10 / span 1;
+    }
+
+    #echo-logo {
+        grid-column: 2 / span 1;
+        grid-row: 10 / span 1;
+    }
+    /* end jobs */
+
+    /* skills */
+
+    .skills h2 {
+        margin-top: 2em;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto;
+    }
+    
+    #title1 {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #title2 {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #title3 {
+        margin-top: .75em; /* why do i need this */
+        grid-row: 1 / span 1;
+        grid-column: 3 / span 1;
+    }
+    
+    .programming-skills {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    
+    }
+    
+    .analytical-skills {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    .behav-skills {
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+    }
+    /* end skills */
+    
+}
+
+/* DESKTOP view */
+@media screen and (min-width: 1000px) {
+
+    nav {
+        display: flex;
+        width: auto;
+        justify-content: flex-end;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    nav a {
+        padding: 1em;
+    }
+
+
+    /* About page */
+    
+    .gallery {
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: repeat(5, auto);
+        grid-column-gap: 1.5em;
+        margin: 1em;
+    }
+    
+    #pic1 {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #pic2 {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    #pic3 {
+        grid-row: 1 / span 1;
+        grid-column: 3 / span 1;
+    }
+    
+    #pic4 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #pic5 {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    #pic6 {
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+    }
+    
+    #pic7 { 
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #pic8 {
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    #pic9 {
+        grid-row: 3 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+
+    /* Work page */
+
+    /* jobs grid */
+    .experience {
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: auto;
+        row-gap: 1em;
+    }
+
+    #FEAST-title {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        margin-top: 1em;
+    }
+
+    #FEAST-des {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    #FEAST-logo {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+        object-fit: cover;
+    }
+
+    #IA-title {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        margin-top: 1em;
+    }
+
+    #IA-des {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    #IA-logo {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        justify-self: end;
+    }
+
+    #TMD-title {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+        margin-top: 1em;
+    }
+
+    #TMD-des {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    #TMD-logo {
+        grid-column: 3 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    #playa-title {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+
+    #playa-des {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+    }
+
+    #playa-logo {
+        grid-column: 3 / span 1;
+        grid-row: 4 / span 1;
+    }
+
+    #echo-title {
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+    }
+
+    #echo-des {
+        grid-column: 2 / span 1;
+        grid-row: 5 / span 1;
+    }
+
+    #echo-logo {
+        grid-column: 3 / span 1;
+        grid-row: 5 / span 1;
+    }
+    /* end jobs */
+    
+}
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+/* Turn Parallax effect off */
+    .parallax{
+        background-attachment: scroll; 
+    }
+/* Turn Flip card off */
+    .flipcard:hover .flipcard-inner {
+        transition: transform none;
+        transform: none;
+    }
+
+}
