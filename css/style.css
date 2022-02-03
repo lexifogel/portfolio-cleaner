@@ -5,58 +5,47 @@ html {
 
 body {
     background-color: #fff; 
-    /* #215583, #5da2d5; */
     font-family: 'Montserrat', sans-serif;
     margin: 3em;
     padding: 0;
     height: 100%;
-    color: #215583;
+    color: #223A59;
 }
 
 .background-color {
-    background: linear-gradient(#5da2d5,#215583);
+    background: linear-gradient(#035AA6,#657D9A);
     color: #fff;
 }
 
 nav {
     display: flex;
     flex-direction: column;
-
-    /* background-color: #5da2d5; */
     width: 100%;
     text-align: right;
 }
 
 nav a {
     padding: .5em;
-    -webkit-text-stroke: .3px #5da2d5;
 }
 
 nav#frontpg-nav a {
-    color: #eefbfb;
+    color: #8BB8D8;
 }
 
 
 /* standard formatting -- all pages */
 h1 {
     font-size: 3.25em;
-    /* color: #eefbfb; */
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 
     margin-bottom: .5em;
     margin-top: .5em;
-    /* text-shadow: .03em .05em #5da2d5; */
-
-    /* -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6); */
 }
 
 
-/* #eefbfb */
-
 h2 {
     font-size: 1.5em;
-    /* color: #eefbfb; */
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: .5em;
@@ -64,22 +53,18 @@ h2 {
 
 h3 {
     font-size: 1em;
-    /* color: #eefbfb; */
     line-height: 1.15;
     font-weight: bold;
     margin-bottom: 1em;
 }
 
 h4 {
-    /* font-size: 16px; */
-    /* color: #FFF; */
     font-weight: bold;
     line-height: 1.15;
     margin: .5em;
 }
 
 p {
-    /* color: #eefbfb; */
     font-family: 'Montserrat', sans-serif;
     line-height: 1.15;
     margin: .5em;
@@ -88,7 +73,6 @@ p {
 
 ul, li {
     line-height: 1.35;
-    /* color: #eefbfb; */
     margin-left: 1em;
 }
 
@@ -101,22 +85,20 @@ ul, li {
 }
 
 a {
-    /* color: #eefbfb; */
     text-decoration: none;
 }
 
 a:hover {
-    color: #215583;
+    color: #657D9A;
 }
 
 a:visited {
-    color: #5da2d5; 
+    color: #035AA6; 
 }
 
 nav a:visited {
     text-decoration: none;
-    color: #215583;
-    /* color: #5da2d5;  */
+    color: #223A59;
 }
 
 
@@ -133,13 +115,13 @@ a:hover {
 footer {
     background-color: transparent;
     position: fixed;
-
     text-align: center;
     /* stick to bottom! ? !!!! */
-    color: #215583; /* eefbfb */
+    color: #223A59;
     font-size: .75em;
 }
 /* end standard formatting -- all pages */
+
 
 #page-container {
     position: relative;
@@ -179,11 +161,11 @@ h1.funky {
      50% { transform: rotate(10.0deg) }
      60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
-  }
+}
   
 .dropdown {
     display: none;
-  }
+}
 
 
 
@@ -327,8 +309,7 @@ h3.activities  {
 }
 
 .flipcard-back p {
-    color: #215583;
-    -webkit-text-stroke: 0;
+    color: #223A59;
 }
 /* end flipcard */ 
 
@@ -457,9 +438,9 @@ textarea{
 }
 
 input[type=submit] {
-    background-color: #eefbfb;
+    background-color: #8BB8D8;
     font-family: 'Montserrat', sans-serif;
-    color: #215583;
+    color: #223A59;
     padding: 14px 20px;
     cursor: pointer;
     width: 25%;
@@ -909,3 +890,22 @@ input[type=submit]:hover {
         transform: none;
     }
 }
+
+
+
+
+/* 
+portfolio color schemes
+
+new:
+#223A59 navy ish
+#035AA6 ocean blue
+#5094CB lighter blue
+#657D9A med grey
+#8BB8D8 lightest blue
+
+old:
+#5da2d5 mid blue
+#215583 darker blue
+#eefbfb very pale blue 
+*/
